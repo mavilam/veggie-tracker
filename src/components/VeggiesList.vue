@@ -21,6 +21,10 @@ import SearchBar from './SearchBar.vue';
 import Counter from './Counter.vue';
 import veggiesData from '../assets/veggies.json';
 
+import {
+		getMonday,
+	} from '../composables/utils'
+
 export default {
   name: 'VeggiesList',
   components: {
@@ -32,7 +36,9 @@ export default {
     return {
       veggies: veggiesData,
       searchQuery: '',
-      clickedIds: new Set()
+      clickedIds: new Set(),
+      historic: {},
+      currentWeek: getMonday(new Date()),
     };
   },
   computed: {
@@ -54,13 +60,14 @@ export default {
           this.clickedIds.delete(id);
         }
       }
-      localStorage.setItem('clickedVeggies', JSON.stringify(Array.from(this.clickedIds)));
+      this.historic[this.currentWeek] = Array.from(this.clickedIds);
+      localStorage.setItem('clickedVeggies', JSON.stringify(this.historic));
     }
   },
   mounted() {
-    const storedClickedIds = localStorage.getItem('clickedVeggies');
-    if (storedClickedIds) {
-      this.clickedIds = new Set(JSON.parse(storedClickedIds));
+    this.historic = JSON.parse(localStorage.getItem('clickedVeggies') || "{}") ;
+    if (this.historic[this.currentWeek]) {
+      this.clickedIds = new Set(this.historic[this.currentWeek]);
     }
   }
 };
