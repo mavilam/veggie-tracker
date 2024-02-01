@@ -1,5 +1,5 @@
 <template>
-  <div class="text-veggie-800">
+  <div class="text-veggie-800 mb-20">
     <SearchBar @search="filterVeggies" />
     <Counter :count="clickedIds.size" />
     <div class="m-4 grid grid-cols-2 sm:grid-cols-3 gap-4">
