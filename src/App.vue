@@ -30,3 +30,13 @@ export default {
   }
 };
 </script>
+
+<style>
+  @font-face {
+    font-family: 'switzer';
+    src: url('./assets/fonts/Switzer-Regular.ttf');
+  }
+  body {
+    font-family: 'switzer', 'Roboto', sans-serif;
+  }
+</style>
