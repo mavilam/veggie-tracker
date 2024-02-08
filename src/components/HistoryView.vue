@@ -5,6 +5,7 @@
       <div v-for="(veggies, date) in historicData" :key="date">
         <p class="text-lg font-semibold">{{ date }}</p>
         <details>
+          <summary>Detalles</summary>
           <table class="table-auto border-spacing-4 border border-veggie-500">
             <thead>
               <tr>
