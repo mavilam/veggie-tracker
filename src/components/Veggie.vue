@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="border border-veggie-700 bg-veggie-200 p-4 cursor-pointer rounded-sm"
+    class="border border-veggie-700 bg-veggie-200 p-4 cursor-pointer rounded-md shadow-md"
     :class="{ 'bg-veggie-600': isClicked, 'text-veggie-200': isClicked }"
     @click="handleClick"
   >

@@ -4,9 +4,22 @@
       <h2 class="text-2xl font-bold mb-4">Histórico de Consumo</h2>
       <div v-for="(veggies, date) in historicData" :key="date">
         <p class="text-lg font-semibold">{{ date }}</p>
-        <ul class="list-disc list-inside">
-          <li v-for="veggie in veggies" :key="veggie.id">{{ veggie.name }}</li>
-        </ul>
+        <details>
+          <table class="table-auto border-spacing-4 border border-veggie-500">
+            <thead>
+              <tr>
+                <th>Vegetales</th>
+                <th>esta</th>
+                <th>semana</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border border-veggie-600" v-for="(group, index) in chunkVeggies(veggies)" :key="index">
+                <td v-for="veggie in group" :key="veggie.id">{{ veggie.name }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </details>
       </div>
     </div>
   </div>
@@ -31,6 +44,13 @@ export default {
     }
   },
   methods: {
+    chunkVeggies(veggies) {
+      const result = [];
+      for (let i = 0; i < veggies.length; i += 3) {
+        result.push(veggies.slice(i, i + 3));
+      }
+      return result;
+    },
     loadHistory() {
       const historicRaw = localStorage.getItem('clickedVeggies');
       if (historicRaw) {
