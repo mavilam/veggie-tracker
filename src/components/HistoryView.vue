@@ -1,11 +1,13 @@
 <template>
   <div v-if="historyAvailable" class="fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center">
     <div class="text-center">
-      <h2 class="text-2xl font-bold mb-4">Histórico de Consumo</h2>
+      <h2 class="text-2xl font-bold mb-4">Histórico de Consumo Por Semanas</h2>
+      <div class="flex flex-col justify-center items-center min-h-screen">
       <div v-for="(veggies, date) in historicData" :key="date">
-        <p class="text-lg font-semibold">{{ date }}</p>
+        <p class="text-lg font-semibold">{{ getWeekInterval(date) }}</p>
         <details>
           <summary>Detalles</summary>
+          <p>{{ veggies.length }} vegetales diferentes</p>
           <table class="table-auto border-spacing-4 border border-veggie-500">
             <thead>
               <tr>
@@ -22,6 +24,8 @@
           </table>
         </details>
       </div>
+    </div>
+
     </div>
   </div>
   <div v-else class="fixed inset-0 bg-white bg-opacity-90 flex justify-center items-center">
@@ -45,6 +49,11 @@ export default {
     }
   },
   methods: {
+    getWeekInterval(date) {
+      const d = new Date(date);
+      const sunday = new Date(d.setDate(d.getDate() + 6));
+      return `${date} - ${sunday.toISOString().slice(0, 10)}`;
+    },
     chunkVeggies(veggies) {
       const result = [];
       for (let i = 0; i < veggies.length; i += 3) {
