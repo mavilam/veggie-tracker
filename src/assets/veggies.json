@@ -17,7 +17,7 @@
   {"id": 16, "name": "Apio"},
   {"id": 17, "name": "Pepinos"},
   {"id": 18, "name": "Puerros"},
-  {"id": 19, "name": "Setas"},
+  {"id": 19, "name": "Champiñón"},
   {"id": 20, "name": "Remolachas"},
   {"id": 21, "name": "Calabaza"},
   {"id": 22, "name": "Habas"},
@@ -39,8 +39,8 @@
   {"id": 38, "name": "Plátano"},
   {"id": 39, "name": "Calçots"},
   {"id": 40, "name": "Pimientos del padrón"},
-  {"id": 41, "name": "Cardo borriquero"},
-  {"id": 42, "name": "Col lombarda"},
+  {"id": 41, "name": "Seta Ostra"},
+  {"id": 42, "name": "Lombarda"},
   {"id": 43, "name": "Habas tiernas"},
   {"id": 44, "name": "Algas"},
   {"id": 45, "name": "Mandarina"},
@@ -48,5 +48,7 @@
   {"id": 47, "name": "Sandía"},
   {"id": 48, "name": "Col rizada"},
   {"id": 49, "name": "Pera"},
-  {"id": 50, "name": "Aguacate"}
+  {"id": 50, "name": "Aguacate"},
+  {"id": 51, "name": "Shiitake"},
+  {"id": 51, "name": "Melón"}
 ]
