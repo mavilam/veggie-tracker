@@ -24,7 +24,7 @@
   {"id": 23, "name": "Naranja", "type": "Fruta"},
   {"id": 24, "name": "Acelgas", "type": "Hoja"},
   {"id": 25, "name": "Brócoli", "type": "Verdura"},
-  {"id": 26, "name": "Col rizada", "type": "Hoja"},
+  {"id": 26, "name": "Níscalos", "type": "Seta"},
   {"id": 27, "name": "Lentejas", "type": "Legumbre"},
   {"id": 28, "name": "Garbanzos", "type": "Legumbre"},
   {"id": 29, "name": "Judías pintas", "type": "Legumbre"},
@@ -57,7 +57,7 @@
   {"id": 56, "name": "Anacardos", "type": "Frutos secos"},
   {"id": 57, "name": "Avellanas", "type": "Frutos secos"},
   {"id": 58, "name": "Macadamias", "type": "Frutos secos"},
-  {"id": 59, "name": "Cacahuetes", "type": "Frutos secos"},
+  {"id": 59, "name": "Cacahuetes", "type": "Legumbre"},
   {"id": 60, "name": "Castañas", "type": "Frutos secos"},
   {"id": 61, "name": "Piñones", "type": "Frutos secos"},
   {"id": 62, "name": "Ciruelas", "type": "Fruta"},
@@ -76,5 +76,6 @@
   {"id": 75, "name": "Melocotón", "type": "Fruta"},
   {"id": 76, "name": "Albaricoque", "type": "Fruta"},
   {"id": 77, "name": "Nectarina", "type": "Fruta"},
-  {"id": 78, "name": "Cereza", "type": "Fruta"}
+  {"id": 78, "name": "Cereza", "type": "Fruta"},
+  {"id": 79, "name": "Boletus", "type": "Seta"}
 ]
