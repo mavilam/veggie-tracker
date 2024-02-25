@@ -1,7 +1,8 @@
 [
   {"id": 1, "name": "Patatas", "type": "Tubérculo"},
   {"id": 2, "name": "Tomates", "type": "Fruta"},
-  {"id": 3, "name": "Pimiento", "type": "Verdura"},
+  {"id": 3, "name": "Pimiento Rojo", "type": "Verdura"},
+  {"id": 80, "name": "Pimiento Verde", "type": "Verdura"},
   {"id": 4, "name": "Cebolla", "type": "Raíz"},
   {"id": 5, "name": "Ajo", "type": "Raíz"},
   {"id": 6, "name": "Espárragos", "type": "Verdura"},
@@ -77,5 +78,6 @@
   {"id": 76, "name": "Albaricoque", "type": "Fruta"},
   {"id": 77, "name": "Nectarina", "type": "Fruta"},
   {"id": 78, "name": "Cereza", "type": "Fruta"},
-  {"id": 79, "name": "Boletus", "type": "Seta"}
+  {"id": 79, "name": "Boletus", "type": "Seta"},
+  {"id": 81, "name": "Aceitunas", "type": "Fruta"}
 ]
