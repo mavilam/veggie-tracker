@@ -79,5 +79,6 @@
   {"id": 77, "name": "Nectarina", "type": "Fruta"},
   {"id": 78, "name": "Cereza", "type": "Fruta"},
   {"id": 79, "name": "Boletus", "type": "Seta"},
-  {"id": 81, "name": "Aceitunas", "type": "Fruta"}
+  {"id": 81, "name": "Aceitunas", "type": "Fruta"},
+  {"id": 82, "name": "Col", "type": "Hoja"}
 ]
