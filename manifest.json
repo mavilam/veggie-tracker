@@ -1,0 +1,19 @@
+{
+  "name": "veggie-tracker",
+  "short_name": "veggie-tracker",
+  "start_url": "/veggie-tracker/",
+  "background_color": "#ecfccb",
+  "theme_color": "#d9f99d",
+  "display": "standalone",
+  "orientation": "natural",
+  "description": "Registra los vegetales que comes semanalmente",
+  "icons": [{
+    "src": "./icons/android-icon-192x192.png",
+    "sizes": "192x192",
+    "type": "image/png"
+  }, {
+    "src": "./icons/android-icon-512x512.png",
+    "sizes": "512x512",
+    "type": "image/png"
+  }]
+}
